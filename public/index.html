@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140b2c">
+  <title>How Well Do You Know the Team? · HIT Closing Quiz</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <div class="skyline" aria-hidden="true"></div>
+  <div class="horizon-grid" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✦</span> HIT CLOSING <span class="brand-dot">·</span> TEAM EDITION</div>
+      <span id="connection" class="connection">READY TO PLAY</span>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="hero landing" aria-label="Welcome screen">
+        <div class="eyebrow">THE CREW // FIVE MISSIONS</div>
+        <h1>HOW WELL DO<br>YOU KNOW <em>THE TEAM?</em></h1>
+        <p class="subtitle">Five questions. Ten seconds each. One neon leaderboard.</p>
+        <div class="landing-grid">
+          <div class="panel landing-panel">
+            <div class="panel-tag">PRESENTING?</div>
+            <h2>Host the quiz</h2>
+            <p>Project the game, share a room code, and see everyone's scores live.</p>
+            <button type="button" class="btn btn-pink" id="create-game">CREATE ROOM <span>→</span></button>
+          </div>
+          <form id="join-form" class="panel landing-panel">
+            <div class="panel-tag">PLAYING?</div>
+            <h2>Join your class</h2>
+            <label for="room-code">ROOM CODE</label>
+            <input id="room-code" name="code" maxlength="5" autocomplete="off" autocapitalize="characters" placeholder="ABCDE" required>
+            <label for="player-name">YOUR NAME</label>
+            <input id="player-name" name="name" maxlength="24" autocomplete="nickname" placeholder="e.g. Alex" required>
+            <button type="submit" class="btn btn-purple">JOIN GAME <span>→</span></button>
+          </form>
+        </div>
+        <p class="fine-print">+100 POINTS PER CORRECT ANSWER · 500 MAX · NO ACCOUNT NEEDED</p>
+      </section>
+    </main>
+    <footer class="footer"><span>GROUP 7 // HUMAN SKILLS</span><span>EVERY STRENGTH MAKES THE TEAM STRONGER.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
